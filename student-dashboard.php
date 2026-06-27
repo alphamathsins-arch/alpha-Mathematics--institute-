@@ -1,4 +1,26 @@
-<!DOCTYPE html>
+<?php
+
+session_start();
+
+include("config.php");
+
+if(!isset($_SESSION['student_id'])){
+
+header("Location: student-login.html");
+
+exit();
+
+}
+
+$id=$_SESSION['student_id'];
+
+$sql="SELECT * FROM students WHERE id='$id'";
+
+$result=mysqli_query($conn,$sql);
+
+$student=mysqli_fetch_assoc($result);
+
+?><!DOCTYPE html>
 <html lang="en">
 
 <head>
