@@ -1,1 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Registration | Alpha Maths Institute</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<img src="logo.jpg" alt="Logo">
+
+<div>Alpha Maths Institute</div>
+
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="student-login.html">Student Portal</a>
+
+</nav>
+
+</header>
+
+<div class="form-container">
+
+<h2>Create Student Account</h2>
+
+<form action="student-dashboard.html" method="post" enctype="multipart/form-data">
+
+<div class="form-group">
+<label>Full Name</label>
+<input type="text" name="fullname" required>
+</div>
+
+<div class="form-group">
+<label>Email Address</label>
+<input type="email" name="email" required>
+</div>
+
+<div class="form-group">
+<label>Create Username</label>
+<input type="text" name="username" required>
+</div>
+
+<div class="form-group">
+<label>Create Password</label>
+<input type="password" name="password" required>
+</div>
+
+<div class="form-group">
+<label>Confirm Password</label>
+<input type="password" name="confirm_password" required>
+</div>
+
+<div class="form-group">
+<label>Grade</label>
+
+<select name="grade">
+
+<option>Grade 10</option>
+<option>Grade 11</option>
+<option selected>Grade 12</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>Session Type</label>
+
+<select name="session">
+
+<option>One-on-One</option>
+
+<option>Group Session</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>Mathematics Percentage</label>
+
+<input type="number"
+name="maths"
+min="0"
+max="100"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>Physical Science Percentage</label>
+
+<input type="number"
+name="science"
+min="0"
+max="100"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>Upload Mathematics & Physical Science Results (PDF or Image)</label>
+
+<input
+type="file"
+name="results"
+accept=".pdf,.jpg,.jpeg,.png"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>Additional Notes (Optional)</label>
+
+<textarea
+rows="5"
+name="notes"
+placeholder="Tell us anything you'd like us to know..."></textarea>
+
+</div>
+
+<div class="form-group">
+
+<button type="submit">
+
+Create Account
+
+</button>
+
+</div>
+
+</form>
+
+<br>
+
+<p style="text-align:center;">
+
+Already have an account?
+
+<a href="student-login.html">
+
+Login Here
+
+</a>
+
+</p>
+
+</div>
+
+</body>
+
+                                                          </html>
