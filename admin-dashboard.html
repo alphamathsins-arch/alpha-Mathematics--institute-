@@ -1,1 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Dashboard | Alpha Maths Institute</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+background:#f4f8fc;
+}
+
+.admin-header{
+background:#083d77;
+color:white;
+padding:25px;
+text-align:center;
+margin-top:90px;
+}
+
+.admin-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:25px;
+padding:40px 8%;
+}
+
+.admin-card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.admin-card h2{
+color:#083d77;
+margin-bottom:20px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+table th{
+background:#083d77;
+color:white;
+padding:12px;
+}
+
+table td{
+padding:10px;
+border:1px solid #ddd;
+}
+
+input,
+select,
+textarea{
+
+width:100%;
+padding:10px;
+margin:8px 0;
+border:1px solid #ccc;
+border-radius:8px;
+
+}
+
+button{
+
+background:#083d77;
+color:white;
+padding:12px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+width:100%;
+
+}
+
+button:hover{
+
+background:#1565c0;
+
+}
+
+.logout{
+
+display:inline-block;
+background:#d32f2f;
+padding:12px 25px;
+color:white;
+text-decoration:none;
+border-radius:30px;
+margin-top:15px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<img src="logo.jpg">
+
+<div>
+
+Alpha Maths Institute
+
+</div>
+
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="admin-login.html">Logout</a>
+
+</nav>
+
+</header>
+
+<div class="admin-header">
+
+<h1>Administrator Dashboard</h1>
+
+<p>Manage Students and Applications</p>
+
+</div>
+
+<div class="admin-grid">
+
+<div class="admin-card">
+
+<h2>Student List</h2>
+
+<table>
+
+<tr>
+
+<th>Name</th>
+
+<th>Status</th>
+
+</tr>
+
+<tr>
+
+<td>John Smith</td>
+
+<td>Under Review</td>
+
+</tr>
+
+<tr>
+
+<td>Sarah Williams</td>
+
+<td>Accepted</td>
+
+</tr>
+
+<tr>
+
+<td>James Brown</td>
+
+<td>Pending</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<div class="admin-card">
+
+<h2>Update Student</h2>
+
+<form>
+
+<label>Student Username</label>
+
+<input type="text">
+
+<label>Application Status</label>
+
+<select>
+
+<option>Pending</option>
+
+<option>Under Review</option>
+
+<option>Accepted</option>
+
+<option>Rejected</option>
+
+</select>
+
+<label>Session Type</label>
+
+<select>
+
+<option>One-on-One</option>
+
+<option>Group Session</option>
+
+</select>
+
+<label>Mathematics (%)</label>
+
+<input type="number">
+
+<label>Physical Science (%)</label>
+
+<input type="number">
+
+<button>
+
+Save Changes
+
+</button>
+
+</form>
+
+</div>
+
+<div class="admin-card">
+
+<h2>Send Message</h2>
+
+<form>
+
+<label>Student Username</label>
+
+<input type="text">
+
+<label>Message</label>
+
+<textarea rows="6"></textarea>
+
+<button>
+
+Send Message
+
+</button>
+
+</form>
+
+</div>
+
+<div class="admin-card">
+
+<h2>Create Announcement</h2>
+
+<form>
+
+<textarea rows="6"
+placeholder="Write announcement here..."></textarea>
+
+<button>
+
+Post Announcement
+
+</button>
+
+</form>
+
+</div>
+
+<div class="admin-card">
+
+<h2>Upload Study Resource</h2>
+
+<form>
+
+<input type="file">
+
+<button>
+
+Upload Resource
+
+</button>
+
+</form>
+
+</div>
+
+<div class="admin-card">
+
+<h2>Student Documents</h2>
+
+<p>
+
+✔ Mathematics Results
+
+</p>
+
+<p>
+
+✔ Physical Science Results
+
+</p>
+
+<p>
+
+✔ Proof of Payment
+
+</p>
+
+<button>
+
+Download Documents
+
+</button>
+
+</div>
+
+<div class="admin-card">
+
+<h2>Quick Statistics</h2>
+
+<p>
+
+Registered Students: <strong>58</strong>
+
+</p>
+
+<p>
+
+One-on-One Students: <strong>21</strong>
+
+</p>
+
+<p>
+
+Group Students: <strong>37</strong>
+
+</p>
+
+<p>
+
+Applications Pending: <strong>9</strong>
+
+</p>
+
+</div>
+
+<div class="admin-card">
+
+<h2>Administrator</h2>
+
+<p>
+
+Logged in as:
+
+<strong>Admin</strong>
+
+</p>
+
+<a href="admin-login.html"
+
+class="logout">
+
+Logout
+
+</a>
+
+</div>
+
+</div>
+
+</body>
+
+  </html>
